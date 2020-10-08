@@ -1,0 +1,27 @@
+Options -Indexes
+DirectoryIndex index.php index.html
+FileETag None
+<IfModule mod_expires.c>
+	ExpiresActive On
+	<FilesMatch "\.(js|css|html)$">
+		#ExpiresDefault A2592000
+	</FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+	Header unset ETag
+	Header unset Pragma
+    #Header always set Content-Security-Policy "default-src 'self' https://locatemarker.com https://connect.facebook.net https://api.tiles.mapbox.com"
+	<FilesMatch "\.(html)$">
+		Header set Content-Type "text/html; charset=UTF-8"
+		Header set P3P CP="STA"
+	</FilesMatch>
+	<FilesMatch "\.(js|css|html)$">
+		#Header set Cache-Control "max-age=2592000"
+		#Header set Accept-Ranges "none"
+	</FilesMatch>
+</IfModule>
+<IfModule mod_deflate.c>
+	<FilesMatch "\.(js|css|html)$">
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>

@@ -1,0 +1,43 @@
+html{height:100%;width:100%}
+body{background-color:#FFFFFF;background-image:url(locatemarker_128x128.png);background-position:center center;background-repeat:no-repeat;color:#000000;font-family:sans-serif;font-size:9pt;height:100%;margin:0px;overflow:hidden;width:100%;}
+a{color:#000000;}
+h1{font-size:11pt;margin:8px 4px 8px 4px;padding:0px;position:relative;}
+p{margin:5px;}
+form{margin:0px;padding:0px;}
+input[type=text]{border:1px solid #CCCCCC;border-radius:0px;font-size:10pt;padding:3px 2px;vertical-align:middle;width:150px;}
+#map_canvas{height:100%;position:relative;width:100%;}
+#guest,#connected{display:none;}
+.panel,.splash{background-color:#FFFFFF;border-radius:3px;box-shadow:0 3px 10px #888888;opacity:0.9;position:absolute;right:10px;top:10px;width:230px;z-index:20000;}
+.splash{display:none;}
+.button{background-color:#525252;border-radius:3px;color:#FFFFFF;font-weight:normal;display:inline-block;padding:4px 7px;position:relative;text-align:center;text-decoration:none;vertical-align:middle;z-index:10;}
+.button:active,.button:focus{background-color:#FF0000;}
+.button_close{float:right;}
+#message{border-top:1px solid #CCCCCC;display:none;margin-top:4px;}
+.leaflet-popup-content-wrapper{border-radius:0px;opacity:0.9;}
+.leaflet-popup-content{font-family:sans-serif;font-size:9pt;margin:3px;overflow:hidden;}
+.leaflet-popup-content p{margin:2px 0px;}
+.leaflet-popup-content .intro{float:left;margin:0px;width:155px;}
+.leaflet-popup-content .picture{float:right;margin:0px;}
+.leaflet-popup-content .buttons{clear:both;margin:4px 0px;}
+.leaflet-container a{color:#000000;}
+.leaflet-popup-content .button{color:#FFFFFF;margin-right:5px;}
+#top .leaflet-popup-content{border-top:1px solid #CCCCCC;margin-top:4px;padding-top:4px;}
+.explore{background-color:#FFFFFF;border-radius:3px;box-shadow:0 3px 10px #888888;display:none;font-size:9pt;opacity:0.9;padding:2px;position:absolute;z-index:30000;}
+#explore_north{left:50%;top:3px;}
+#explore_south{left:50%;bottom:3px;}
+#explore_east{right:3px;top:50%;}
+#explore_west{left:3px;top:50%;}
+#explore_north_east{right:3px;top:3px;}
+#explore_north_west{left:3px;top:3px;}
+#explore_south_east{right:3px;bottom:3px;}
+#explore_south_west{left:3px;bottom:3px;}
+@media(max-height:600px){
+#hello,#top{display:none;}
+.panel,.splash{right:3px;top:3px;}
+.leaflet-top .leaflet-control{margin:3px;}
+}
+@media(max-width:600px){
+#hello,#top{display:none;}
+.panel,.splash{right:3px;top:3px;}
+.leaflet-top .leaflet-control{margin:3px;}
+}

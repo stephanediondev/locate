@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>St&eacute;phane Dion - locate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta property="fb:app_id" content="242057362583698">
+<meta property="og:site_name" content="Locate Marker">
+<meta property="og:title" content="Locate Marker">
+<meta property="og:type" content="website">
+<meta property="og:image" content="//locatemarker.com/app/icons/icon-512x512.png">
+<meta property="og:url" content="//locatemarker.com/">
+<meta property="og:description" content="Locate any Facebook Place on a fullscreen map based on OpenStreetMap">
+<meta name="description" content="Locate any Facebook Place on a fullscreen map based on OpenStreetMap">
+<meta name="theme-color" content="#7e57c2">
+<link rel="apple-touch-icon" sizes="512x512" href="app/icons/icon-512x512.png">
+<link rel="apple-touch-icon-precomposed" sizes="512x512" href="app/icons/icon-512x512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+<link rel="stylesheet" type="text/css" href="locatemarker.css">
+<link rel="icon" sizes="16x16" href="app/icons/icon-16x16.png">
+<link rel="icon" sizes="32x32" href="app/icons/icon-32x32.png">
+<link rel="icon" sizes="64x64" href="app/icons/icon-64x64.png">
+<link rel="icon" sizes="128x128" href="app/icons/icon-128x128.png">
+<link rel="icon" sizes="256x256" href="app/icons/icon-256x256.png">
+<link rel="icon" sizes="512x512" href="app/icons/icon-512x512.png">
+</head>
+<body>
+<div id="fb-root"></div>
+<div id="map_canvas"></div>
+<div class="explore" id="explore_north"></div>
+<div class="explore" id="explore_south"></div>
+<div class="explore" id="explore_east"></div>
+<div class="explore" id="explore_west"></div>
+<div class="explore" id="explore_north_east"></div>
+<div class="explore" id="explore_north_west"></div>
+<div class="explore" id="explore_south_east"></div>
+<div class="explore" id="explore_south_west"></div>
+<div id="guest">
+    <div class="panel">
+        <p><a class="fb_login" href="#" title="Facebook Log In"><img src="fb-login.png" alt="Facebook Log In Logo"></a></p>
+        <p><a href="https://www.facebook.com/locatemarker" target="_blank">Community</a></p>
+        <p><a href="https://code.sdion.net/opensource/locatemarker" target="_blank">Code</a></p>
+        <p><a class="ui_showsplash" href="#privacy">Privacy policy</a></p>
+        <p><a class="ui_showsplash" href="#terms">Terms of service</a></p>
+        <p><a class="ui_showsplash" href="#credits">Credits</a></p>
+    </div>
+</div>
+<div id="connected">
+    <div class="panel">
+        <p id="hello"></p>
+        <form method="post" action="//locatemarker.com/" enctype="application/x-www-form-urlencoded">
+            <p><a class="ui_showsplash button" href="#menu">Menu</a> <input id="field_q" name="q" placeholder="starbucks, gallery..." type="text" value=""></p>
+        </form>
+        <div id="message">
+        </div>
+        <div id="top">
+        </div>
+    </div>
+    <div class="splash" id="menu">
+        <p class="button_close"><a class="ui_hidesplash button" href="#">Close</a></p>
+        <h1>Menu</h1>
+        <p><a href="https://www.facebook.com/locatemarker" target="_blank">Community</a></p>
+        <p><a href="https://code.sdion.net/opensource/locatemarker" target="_blank">Code</a></p>
+        <p><a class="ui_showsplash" href="#privacy">Privacy policy</a></p>
+        <p><a class="ui_showsplash" href="#terms">Terms of service</a></p>
+        <p><a class="ui_showsplash" href="#credits">Credits</a></p>
+        <p><a class="map_locateme button" href="#">Locate me</a>&nbsp;&nbsp;<a class="fb_logout button" href="#">Logout</a></p>
+    </div>
+</div>
+<div class="splash" id="privacy">
+    <p class="button_close"><a class="ui_hidesplash button" href="#">Close</a></p>
+    <h1>Privacy policy</h1>
+    <p>The Facebook responses or the geolocation result aren't stored on the website "Locate Marker" and no cookies are used on the locatemarker.com domain.</p>
+    <div id="permissions">
+    </div>
+</div>
+<div class="splash" id="terms">
+    <p class="button_close"><a class="ui_hidesplash button" href="#">Close</a></p>
+    <h1>Terms of service</h1>
+    <p>All informations on the website "Locate Marker" are provided by external services.</p>
+</div>
+<div class="splash" id="credits">
+    <p class="button_close"><a class="ui_hidesplash button" href="#">Close</a></p>
+    <h1>Credits</h1>
+    <p>Data <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a></p>
+    <p>Tiles <a href="https://www.mapbox.com/" target="_blank">Mapbox</a></p>
+    <p>JavaScript library <a href="http://leafletjs.com/" target="_blank">Leaflet</a></p>
+</div>
+<script src="//connect.facebook.net/en_US/all.js"></script>
+<script src="node_modules/leaflet/dist/leaflet.js" type="text/javascript"></script>
+<script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="locatemarker.js" type="text/javascript"></script>
+</body>
+</html>
