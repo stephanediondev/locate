@@ -1,4 +1,4 @@
-var VERSION = '1.0';
+var VERSION = 'develop';
 var CACHE_KEY = 'locatemarker-v' + VERSION;
 var CACHE_FILES = [
     '.',

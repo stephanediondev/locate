@@ -1,4 +1,4 @@
 ._*
 .DS_Store
-index.php
-node_modules
+public/index.php
+public/node_modules
