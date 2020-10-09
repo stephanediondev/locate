@@ -1,32 +1,21 @@
 {
-  "dependencies": {
-    "jquery": "^3.5.1",
-    "leaflet": "^1.7.1"
-  },
-  "name": "locate",
-  "description": "Rewrite soon",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stephanediondev/locate.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stephanediondev/locate/issues"
-  },
-  "homepage": "https://github.com/stephanediondev/locate#readme",
-  "devDependencies": {
-    "css-loader": "^4.3.0",
-    "file-loader": "^6.1.0",
-    "mini-css-extract-plugin": "^0.12.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
-  }
+    "name": "locate",
+    "description": "Locate any Facebook Place on a fullscreen map based on OpenStreetMap",
+    "homepage": "https://github.com/stephanediondev/locate",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "build": "webpack"
+    },
+    "devDependencies": {
+        "css-loader": "^4.3.0",
+        "file-loader": "^6.1.0",
+        "mini-css-extract-plugin": "^0.12.0",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    },
+    "dependencies": {
+        "jquery": "^3.5.1",
+        "leaflet": "^1.7.1"
+    }
 }
