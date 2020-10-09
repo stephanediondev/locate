@@ -1,6 +1,32 @@
 {
   "dependencies": {
-    "jquery": "^3.3.1",
-    "leaflet": "^1.3.1"
+    "jquery": "^3.5.1",
+    "leaflet": "^1.7.1"
+  },
+  "name": "locate",
+  "description": "Rewrite soon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanediondev/locate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanediondev/locate/issues"
+  },
+  "homepage": "https://github.com/stephanediondev/locate#readme",
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "style-loader": "^1.3.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }

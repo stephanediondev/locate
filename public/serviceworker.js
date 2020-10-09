@@ -2,23 +2,13 @@ var VERSION = 'develop';
 var CACHE_KEY = 'locatemarker-v' + VERSION;
 var CACHE_FILES = [
     '.',
-    'manifest.json',
+    'manifest.webmanifest',
     'index.html',
-    'locatemarker.css',
-    'locatemarker.js',
     'app/icons/icon-16x16.png',
     'app/icons/icon-32x32.png',
     'app/icons/icon-128x128.png',
     'app/icons/icon-256x256.png',
     'app/icons/icon-512x512.png',
-    'images/locatemarker_event.png',
-    'images/locatemarker.png',
-    'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/leaflet/dist/leaflet.js',
-    'node_modules/leaflet/dist/leaflet.css',
-    'node_modules/leaflet/dist/images/marker-icon-2x.png',
-    'node_modules/leaflet/dist/images/marker-icon.png',
-    'node_modules/leaflet/dist/images/marker-shadow.png',
 ];
 
 self.addEventListener('install', function(InstallEvent) {

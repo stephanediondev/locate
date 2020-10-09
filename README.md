@@ -1,1 +1,4 @@
-Rewrite soon
+```
+npm install
+npm run build
+```

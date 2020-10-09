@@ -10,7 +10,6 @@ FileETag None
 <IfModule mod_headers.c>
 	Header unset ETag
 	Header unset Pragma
-    #Header always set Content-Security-Policy "default-src 'self' https://locatemarker.com https://connect.facebook.net https://api.tiles.mapbox.com"
 	<FilesMatch "\.(html)$">
 		Header set Content-Type "text/html; charset=UTF-8"
 		Header set P3P CP="STA"
