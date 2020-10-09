@@ -1,7 +1,5 @@
 import L from 'leaflet';
 import $ from 'jquery';
-import 'leaflet/dist/leaflet.css';
-import './style.css';
 
 var facebook_api_prefix = '/v3.0';
 var date_today = new Date();
@@ -72,7 +70,7 @@ function addZ(n) {
 function map_init() {
     debug('init map');
     map = new L.map('map_canvas', {'scrollWheelZoom': true, 'center': [map_latitude, map_longitude], 'zoom': map_zoom, 'attributionControl': false});
-    map.addControl(new L.Control.Attribution({'prefix': '<a href="#credits" onclick="ui_showsplash(\'#credits\');">Credits</a>'}));
+    map.addControl(new L.Control.Attribution({'prefix': '<a href="#credits" class="ui_showsplash">Credits</a>'}));
     var urlTemplate = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}';
     L.tileLayer(urlTemplate, {
         'maxZoom': 18,
