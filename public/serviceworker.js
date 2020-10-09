@@ -1,5 +1,6 @@
 var VERSION = 'develop';
-var CACHE_KEY = 'locatemarker-v' + VERSION;
+var CACHE_KEY_PREFIX = 'locate.';
+var CACHE_KEY = CACHE_KEY_PREFIX + VERSION;
 var CACHE_FILES = [
     '.',
     'manifest.webmanifest',
@@ -9,6 +10,8 @@ var CACHE_FILES = [
     'app/icons/icon-128x128.png',
     'app/icons/icon-256x256.png',
     'app/icons/icon-512x512.png',
+    'app_css.css',
+    'app_js.js',
 ];
 
 self.addEventListener('install', function(InstallEvent) {
