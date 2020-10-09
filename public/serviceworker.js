@@ -10,6 +10,9 @@ var CACHE_FILES = [
     'app/icons/icon-128x128.png',
     'app/icons/icon-256x256.png',
     'app/icons/icon-512x512.png',
+    'images/locatemarker_me.png',
+    'images/locatemarker.png',
+    'images/marker-shadow.png',
     'app_css.css',
     'app_js.js',
 ];
