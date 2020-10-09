@@ -1,6 +1,13 @@
 import L from 'leaflet';
 import $ from 'jquery';
 
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+    iconUrl: require('leaflet/dist/images/marker-icon.png'),
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
+
 var facebook_api_prefix = '/v3.0';
 var date_today = new Date();
 var map_zoom = 16;
@@ -18,8 +25,8 @@ var permissions_recommended = {};
 var marker_me = false;
 var latlng_me = false;
 var circle_colors = {1: '#40fd07', 2: '#75f612', 3: '#aaef1d', 4: '#dee729', 5: '#ffd731', 6: '#ffbb35', 7: '#ff9228', 8: '#f46c1e', 9: '#e04616', 10: '#bc220d'};
-var icon_marker = new L.Icon.Default({'iconUrl': '../../../public/images/locatemarker.png', 'iconRetinaUrl': '../../../public/images/locatemarker.png', 'shadowUrl': '../../../public/images/marker-shadow.png'});
-var icon_me = new L.Icon.Default({'iconUrl': '../../../public/images/locatemarker_me.png', 'iconRetinaUrl': '../../../public/images/locatemarker_me.png', 'shadowUrl': '../../../public/images/marker-shadow.png'});
+var icon_marker = new L.Icon.Default({'iconUrl': 'images/locatemarker.png', 'iconRetinaUrl': 'images/locatemarker.png', 'shadowUrl': 'images/marker-shadow.png'});
+var icon_me = new L.Icon.Default({'iconUrl': 'images/locatemarker_me.png', 'iconRetinaUrl': 'images/locatemarker_me.png', 'shadowUrl': 'images/marker-shadow.png'});
 var search_in_progress = 0;
 function debug(response) {
     if (window.console && console.debug) {
