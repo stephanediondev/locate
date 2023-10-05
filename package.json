@@ -8,7 +8,7 @@
         "build": "webpack"
     },
     "devDependencies": {
-        "css-loader": "^4.3.0",
+        "css-loader": "^6.8.1",
         "file-loader": "^6.2.0",
         "mini-css-extract-plugin": "^2.7.2",
         "webpack": "^5.76.0",
